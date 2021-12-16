@@ -1,0 +1,72 @@
+footer{
+    background-color: $purple;
+    width: 100%;
+    .oneSide{
+        width: 100%;
+    
+        h4{
+            font-size: 1.7em;
+            font-family: $font1;
+            letter-spacing: 3px;
+            text-align: center;
+            padding: 20px;
+        }
+        .footerPlace{
+            padding: 0 160px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            font-family: $font3;
+
+            @include tablet {
+                flex-direction: column; 
+                .myLi{
+                    margin-top: 12px;
+                }
+            }
+            a{
+                color: rgb(0, 0, 0);
+                &:hover{
+                    color: $yellow;
+                }
+            }
+        }
+    }
+    .social{
+        width: 100%;
+        h4{
+            font-size: 1.7em;
+            font-family: $font1;
+            letter-spacing: 3px;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 0.5% 39px ;
+
+        @include tablet {
+            flex-direction: column; 
+            li{
+                margin-top: 12px;
+            }
+        }
+        i{
+            color: black;
+            font-size: 1.6em;
+            &:hover{
+             color: $yellow;
+            }
+        }
+    }
+    .Copyright{
+        text-align: center;
+        padding-top: 15px;
+        letter-spacing: 2px;
+    }
+}
+

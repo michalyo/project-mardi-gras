@@ -1,0 +1,52 @@
+.about{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5% 3%;
+    h2{
+        font-family: $font2;
+        font-size: 2em;
+        color: $green;
+        position: relative;
+        left: 150%;
+        animation: move 3s forwards;
+        opacity: 0;
+        color: $purple;
+
+    }
+    img{
+        width: 30%;
+        float: right;
+        border-radius: 10px;
+        border: solid $green 3px;
+        margin: 5px;
+    }
+    .photo1{
+        float: left;
+    }
+    .photo2{
+        float: left;
+        width: 30%;
+        height: 30vh ;
+        
+    }
+    .header2{
+        text-align: right;
+    }
+    p{
+        font-size: 1.3em;
+        font-family: $font3;
+    }
+}
+@keyframes move {
+    100%{
+        left: 0;
+        opacity: 1;
+        color: $green;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@300&display=swap");
+header {
+  background-color: #f2cc0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1% 3%;
+  position: relative;
+}
+
+header::after {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#9453a6), to(#8cbf3f));
+  background: linear-gradient(to right, #9453a6, #8cbf3f);
+  content: " ";
+  left: 0;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+header .logo {
+  font-family: "Henny Penny";
+  font-size: 2em;
+}
+
+@media (max-width: 700px) {
+  header .logo {
+    width: 100%;
+  }
+}
+
+header .logo a {
+  color: #0d0d0d;
+}
+
+header .menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  header .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+  }
+}
+
+header .menu ul li {
+  padding: 0 12px;
+  text-align: center;
+}
+
+header .menu ul li:hover {
+  background-color: #8cbf3f;
+}
+
+header .menu ul li a {
+  color: #0d0d0d;
+  font-size: 1.3em;
+  font-family: "Henny Penny";
+}
+
+header .menu .open {
+  display: block;
+}
+
+header .btn {
+  position: absolute;
+  right: 18px;
+  top: 20px;
+  font-size: 1.6em;
+  border: none;
+  background: none;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  header .btn {
+    display: block;
+  }
+}
+
+footer {
+  background-color: #9453a6;
+  width: 100%;
+}
+
+footer .oneSide {
+  width: 100%;
+}
+
+footer .oneSide h4 {
+  font-size: 1.7em;
+  font-family: "Pattaya";
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .oneSide .footerPlace {
+  padding: 0 160px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto", "sans-serif";
+}
+
+@media (max-width: 1000px) {
+  footer .oneSide .footerPlace {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .oneSide .footerPlace .myLi {
+    margin-top: 12px;
+  }
+}
+
+footer .oneSide .footerPlace a {
+  color: black;
+}
+
+footer .oneSide .footerPlace a:hover {
+  color: #f2cc0f;
+}
+
+footer .social {
+  width: 100%;
+}
+
+footer .social h4 {
+  font-size: 1.7em;
+  font-family: "Pattaya";
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 20px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 0.5% 39px;
+}
+
+@media (max-width: 1000px) {
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer ul li {
+    margin-top: 12px;
+  }
+}
+
+footer ul i {
+  color: black;
+  font-size: 1.6em;
+}
+
+footer ul i:hover {
+  color: #f2cc0f;
+}
+
+footer .Copyright {
+  text-align: center;
+  padding-top: 15px;
+  letter-spacing: 2px;
+}
+
+.slider {
+  width: 500%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  position: relative;
+  -webkit-animation: slider 30s ease-in-out infinite alternate;
+          animation: slider 30s ease-in-out infinite alternate;
+}
+
+.slider div {
+  width: 100%;
+  position: relative;
+}
+
+.slider div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes slider {
+  0% {
+    right: 0;
+  }
+  15% {
+    right: 0;
+  }
+  20% {
+    right: 100%;
+  }
+  35% {
+    right: 100%;
+  }
+  40% {
+    right: 200%;
+  }
+  65% {
+    right: 200%;
+  }
+  70% {
+    right: 300%;
+  }
+  85% {
+    right: 300%;
+  }
+  90% {
+    right: 400%;
+  }
+  100% {
+    right: 400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    right: 0;
+  }
+  15% {
+    right: 0;
+  }
+  20% {
+    right: 100%;
+  }
+  35% {
+    right: 100%;
+  }
+  40% {
+    right: 200%;
+  }
+  65% {
+    right: 200%;
+  }
+  70% {
+    right: 300%;
+  }
+  85% {
+    right: 300%;
+  }
+  90% {
+    right: 400%;
+  }
+  100% {
+    right: 400%;
+  }
+}
+
+.container {
+  background-color: #f2f2f2;
+  font-family: "Roboto", "sans-serif";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container div {
+  padding: 2%;
+}
+
+.container div img {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: #f2cc0f 2px 3px 10px 1px;
+          box-shadow: #f2cc0f 2px 3px 10px 1px;
+}
+
+.container h2 {
+  text-align: center;
+  font-family: "Pattaya";
+}
+
+.container p {
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 2%;
+}
+
+.container a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #0d0d0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+}
+
+.container a:hover {
+  letter-spacing: 2px;
+  color: #9453a6;
+}
+
+.container .more {
+  font-family: "Henny Penny";
+  color: #9453a6;
+}
+
+.section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.466)), to(rgba(255, 255, 255, 0.493))), url(/pictures/girl.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.493)), url(/pictures/girl.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 3%;
+  line-height: 2em;
+  font-family: "Henny Penny";
+  font-size: larger;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5% 3%;
+}
+
+.about h2 {
+  font-family: "Henny Penny";
+  font-size: 2em;
+  color: #8cbf3f;
+  position: relative;
+  left: 150%;
+  -webkit-animation: move 3s forwards;
+          animation: move 3s forwards;
+  opacity: 0;
+  color: #9453a6;
+}
+
+.about img {
+  width: 30%;
+  float: right;
+  border-radius: 10px;
+  border: solid #8cbf3f 3px;
+  margin: 5px;
+}
+
+.about .photo1 {
+  float: left;
+}
+
+.about .photo2 {
+  float: left;
+  width: 30%;
+  height: 30vh;
+}
+
+.about .header2 {
+  text-align: right;
+}
+
+.about p {
+  font-size: 1.3em;
+  font-family: "Roboto", "sans-serif";
+}
+
+@-webkit-keyframes move {
+  100% {
+    left: 0;
+    opacity: 1;
+    color: #8cbf3f;
+  }
+}
+
+@keyframes move {
+  100% {
+    left: 0;
+    opacity: 1;
+    color: #8cbf3f;
+  }
+}
+
+.all {
+  background-color: #8cbf3f;
+}
+
+.all .allmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.all .allmedia div img {
+  height: 400px;
+  width: 400px;
+  padding: 12% 12%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1%;
+}
+
+.all .allmedia div img:hover {
+  opacity: 0.8;
+}
+
+.all .popup {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
+
+.all .popup .popup-window {
+  overflow: hidden;
+  height: 60vh;
+  width: 60%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.all .popup .popup-window .close-popup {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  font-size: 2em;
+  cursor: pointer;
+  text-shadow: 0 0 4px #f2f2f2;
+}
+
+.all .popup .popup-window .phara {
+  text-align: center;
+  font-size: 1.1em;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  padding: 1%;
+  background-color: #f2cc0f;
+  width: 100%;
+}
+
+.h3 {
+  color: #9453a6;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Henny Penny";
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 3%;
+  height: 400px;
+  gap: 2%;
+}
+
+.containerFaq {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.466)), to(rgba(255, 255, 255, 0.651))), url(/pictures/photo5.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.651)), url(/pictures/photo5.png);
+  background-position: center;
+  background-size: cover;
+  padding: 5% 20%;
+}
+
+.containerFaq .faq {
+  text-align: center;
+}
+
+.containerFaq .faq .question {
+  position: relative;
+  padding: 0 2em;
+  background-color: #9453a6;
+  border: solid 2px #0d0d0d;
+  border-radius: 12px;
+  font-family: "Pattaya";
+  margin: 1.7em 0 0.8em 0;
+}
+
+.containerFaq .faq .question i {
+  position: absolute;
+  right: 0.4em;
+  margin-top: 2px;
+}
+
+.containerFaq .faq .question i:hover {
+  color: #f2cc0f;
+}
+
+.containerFaq .faq .answer {
+  position: relative;
+  font-family: "Roboto", "sans-serif";
+  background-color: rgba(255, 255, 255, 0.451);
+  border-radius: 6px;
+  display: none;
+}
+
+.containerFaq .faq .openText {
+  display: block;
+}
+
+small {
+  display: none;
+  color: red;
+  text-shadow: 3px 3px 4px #0d0d0d;
+  text-align: center;
+  font-size: clamp(1.2em, 2vw, 2em);
+  font-weight: bold;
+  font-family: "Roboto", "sans-serif";
+}
+
+.formArea {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.466)), to(rgba(0, 0, 0, 0.055))), url(/pictures/bgc.png);
+  background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(0, 0, 0, 0.055)), url(/pictures/bgc.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 5%;
+}
+
+.formArea h2 {
+  font-family: "Pattaya";
+  font-size: 2em;
+  letter-spacing: 10px;
+  color: #f2f2f2;
+  text-shadow: 6px 4px 3px black;
+}
+
+.formArea #firstname {
+  margin: 3%;
+  width: 60%;
+}
+
+.formArea #lastname {
+  margin: 3%;
+  width: 60%;
+}
+
+.formArea #email {
+  margin: 3%;
+  width: 60%;
+}
+
+.formArea #text {
+  margin: 3%;
+  width: 60%;
+  height: 20vh;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+}
+
+.formArea input {
+  margin: 3%;
+  font-size: 2em;
+  background-color: #f2f2f2;
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .formArea input {
+    font-size: 1em;
+  }
+}
+
+.formArea .send {
+  font-family: "Pattaya";
+  width: 20%;
+  border-radius: 30px;
+}
+
+.formArea .send:hover {
+  opacity: 1;
+}
+
+.trivia-area {
+  text-align: center;
+  padding: 6%;
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.466)), to(rgba(255, 255, 255, 0.493))), url(/pictures/bgccc.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.493)), url(/pictures/bgccc.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.trivia-area .title1 {
+  margin-top: 2%;
+  text-align: center;
+  font-family: "Henny Penny";
+  color: #0d0d0d;
+  font-size: 2em;
+}
+
+.trivia-area h3 {
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.trivia-area #btn {
+  font-family: "Henny Penny";
+  width: 40%;
+  margin-top: 5%;
+  letter-spacing: 2px;
+}
+
+.trivia-area .score {
+  font-family: "Henny Penny";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=main.css.map */

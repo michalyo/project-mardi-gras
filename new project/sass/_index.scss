@@ -1,0 +1,109 @@
+.slider{
+    width: 500%;
+    display: flex;
+    height: 50vh;
+    position: relative;
+    animation: slider 30s ease-in-out infinite alternate;
+    div{
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@keyframes slider {
+    0%{
+        right: 0;
+    }
+    15%{
+        right: 0;
+    }
+    20%{
+        right: 100%;
+    }
+    35%{
+        right: 100%;
+    }
+    40%{
+        right: 200%;
+    }
+    65%{
+        right: 200%;
+    }
+    70%{
+        right: 300%;
+    }
+    85%{
+        right: 300%;
+    }
+    90%{
+        right: 400%;
+    }
+    100%{
+        right: 400%;
+    }
+}
+
+.container{
+    background-color: $white;
+    font-family: $font3;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    @include tablet {
+        flex-direction: column; 
+    }
+    div{
+       padding: 2%;
+        img{
+             width: 100%;
+            height: 170px;
+            object-fit: cover;   
+            border-radius: 20px;
+            box-shadow: $yellow 2px 3px 10px 1px ;
+        }
+    }
+    h2{
+        text-align: center;
+        font-family: $font1;
+    }
+    p{
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 2%;
+    }
+    a{
+        transition: all 0.4s;
+        color: $black;
+        display: flex;
+        justify-content: center;
+        font-family: $font3;
+        font-weight: bold;
+        &:hover{
+           letter-spacing: 2px;
+            color: $purple;
+        }
+    }
+    .more{
+    font-family: $font2;
+    color: $purple;
+    }
+}
+.section1{
+background:linear-gradient(rgba(255, 255, 255, 0.466),rgba(255, 255, 255, 0.493)), url(/pictures/girl.jpg);
+background-position: center;
+background-size: cover;
+padding: 3%;
+line-height: 2em;
+font-family: $font2;
+font-size: larger;
+letter-spacing: 2px;
+font-weight: bold;
+text-align: center;
+
+
+}

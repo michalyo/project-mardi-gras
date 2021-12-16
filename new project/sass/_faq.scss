@@ -1,0 +1,37 @@
+.containerFaq{
+  background:linear-gradient(rgba(255, 255, 255, 0.466),rgba(255, 255, 255, 0.651)), url(/pictures/photo5.png);
+  background-position: center;
+  background-size: cover;
+  padding: 5% 20%;
+
+.faq{
+  text-align: center;
+.question{
+  position: relative;
+  padding: 0 2em;
+  background-color: $purple;
+  border: solid 2px $black;
+  border-radius: 12px;
+  font-family: $font1;
+  margin: 1.7em 0 0.8em 0 ;
+i{
+  position: absolute;
+  right: 0.4em;
+   margin-top: 2px;
+   &:hover{
+     color: $yellow;
+   }
+  }
+}
+.answer{
+  position: relative;
+  font-family: $font3;
+  background-color: rgba(255, 255, 255, 0.451);
+  border-radius: 6px;
+  display: none;
+}
+.openText{
+  display: block;
+}
+}
+}
